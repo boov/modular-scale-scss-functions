@@ -1,0 +1,57 @@
+$modular-scale-ratio: 2 !default;
+
+@function modular-scale(
+  $value,
+  $increment: 0,
+  $ratio: $modular-scale-ratio,
+  $unit: ""
+) {
+  // Error if $value is not a number or has units
+  @if (type-of($value) != "number") {
+    @error "$value should be a number, '#{$value}' (#{type-of($value)}) supplied";
+  }
+
+  // Error if $increment is not a number or has units
+  @if (type-of($increment) != "number" or not unitless($increment)) {
+    @error "$increment should be a unitless number, '#{$increment}' (#{type-of($increment)}) supplied";
+  }
+
+  // Error if $ratio is not a number or has units
+  @if (type-of($ratio) != "number" or not unitless($ratio)) {
+    @error "$ratio should be a unitless number, '#{$ratio}' (#{type-of($ratio)}) supplied";
+  }
+
+  // Error if $unit is not a string
+  @if (type-of($unit) != "string") {
+    @error "$unit should be a string, '#{$unit}' (#{type-of($unit)}) supplied";
+  }
+
+  // Keep the original unit type if not set manually
+  @if (not unitless($value) and $unit == "") {
+    $unit: unit($value);
+  }
+
+  // Strip units from $value
+  $value: $value / ($value * 0 + 1);
+
+  // Calculate positive increments
+  @if ($increment > 0) {
+    @for $i from 1 through $increment {
+      $value: $value * $ratio;
+    }
+  }
+
+  // Calculate negative increments
+  @if ($increment < 0) {
+    @for $i from 1 through abs($increment) {
+      $value: $value / $ratio;
+    }
+  }
+
+  // Convert $value to specified $unit and return
+  @if ($unit != "") {
+    @return convert-unit($value, $unit);
+  }
+
+  @return $value;
+}

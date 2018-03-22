@@ -1,0 +1,5 @@
+$em-scale-ratio: 1.2 !default;
+
+@function em-scale($increment: 0, $ratio: $em-scale-ratio) {
+  @return modular-scale(1, $increment, $ratio, "em");
+}
