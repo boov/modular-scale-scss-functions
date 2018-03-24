@@ -1,5 +1,5 @@
 {
-  "name": "modular-scale-scss-functions",
+  "name": "scss-modular-scale",
   "version": "0.0.1",
   "description":
     "A modular scale SCSS function with a few complimentary helper functions",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/boov/modular-scale-scss-functions.git"
+    "url": "git+ssh://git@github.com/boov/scss-modular-scale.git"
   },
   "keywords": ["modular", "scale", "scss", "css", "functions"],
   "author": "Matthew Booth <matt@boov.co.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/boov/modular-scale-scss-functions/issues"
+    "url": "https://github.com/boov/scss-modular-scale/issues"
   },
-  "homepage": "https://github.com/boov/modular-scale-scss-functions#readme",
+  "homepage": "https://github.com/boov/scss-modular-scale#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.2.0",
