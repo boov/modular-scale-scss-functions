@@ -1,3 +1,7 @@
+$modular-scale-ratio: 2 !default;
+$rem-scale-ratio: 1.2 !default;
+$em-scale-ratio: 1.2 !default;
+
 @import "functions/convert-unit";
 @import "functions/modular-scale";
 @import "functions/rem-scale";

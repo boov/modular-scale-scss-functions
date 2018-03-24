@@ -1,5 +1,3 @@
-$rem-scale-ratio: 1.2 !default;
-
 @function rem-scale($increment: 0, $ratio: $rem-scale-ratio) {
   @return modular-scale(1, $increment, $ratio, "rem");
 }
