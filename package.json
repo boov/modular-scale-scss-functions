@@ -1,6 +1,6 @@
 {
   "name": "scss-modular-scale",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description":
     "A modular scale SCSS function with a few complimentary helper functions",
   "main": "_functions.scss",
