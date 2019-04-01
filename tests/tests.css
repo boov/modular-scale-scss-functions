@@ -1,12 +1,10 @@
-.results {
+:root {
   --should-return-1: 1;
   --should-return-1em: 1em;
   --should-return-2: 2;
   --should-return-4px: 4px;
   --should-return-4: 4;
   --should-return-8rem: 8rem;
-  --should-return-16em: 16em;
-  --should-return-32px: 32px;
   --should-return-1-point-2rem: 1.2rem;
   --should-return-1-point-44rem: 1.44rem;
   --should-return-2rem: 2rem;
@@ -14,4 +12,5 @@
   --should-return-1-point-2em: 1.2em;
   --should-return-1-point-44em: 1.44em;
   --should-return-2em: 2em;
-  --should-return-4em: 4em; }
+  --should-return-4em: 4em;
+}

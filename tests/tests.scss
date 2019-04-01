@@ -1,32 +1,21 @@
 @import "../functions";
 
-.results {
-  --should-return-1: modular-scale(1);
-  --should-return-1em: modular-scale(1em);
-
-  --should-return-2: modular-scale(2, 0);
-  --should-return-4px: modular-scale(2px, 1);
-
-  --should-return-4: modular-scale(4, 1, 1);
-  --should-return-8rem: modular-scale(4rem, 1, 2);
-
-  --should-return-16em: modular-scale(8, 1, 2, "em");
-  --should-return-32px: modular-scale(8%, 2, 2, "px");
-
-  --should-return-1-point-2rem: rem-scale(1);
-  --should-return-1-point-44rem: rem-scale(2);
-
-  --should-return-2rem: rem-scale(1, 2);
-  --should-return-4rem: rem-scale(2, 2);
-
-  --should-return-1-point-2em: em-scale(1);
-  --should-return-1-point-44em: em-scale(2);
-
-  --should-return-2em: em-scale(1, 2);
-  --should-return-4em: em-scale(2, 2);
-
-  //--should-value-error: modular-scale(#fff);
-  //--should-increment-error: modular-scale(1, #fff);
-  //--should-ratio-error: modular-scale(1, 1, #fff);
-  //--should-unit-error: modular-scale(1, 1, 1, #fff);
+:root {
+  --should-return-1: #{modular-scale(1)};
+  --should-return-1em: #{modular-scale(1em)};
+  --should-return-2: #{modular-scale(2, 0)};
+  --should-return-4px: #{modular-scale(2px, 1)};
+  --should-return-4: #{modular-scale(4, 1, 1)};
+  --should-return-8rem: #{modular-scale(4rem, 1, 2)};
+  --should-return-1-point-2rem: #{rem-scale(1)};
+  --should-return-1-point-44rem: #{rem-scale(2)};
+  --should-return-2rem: #{rem-scale(1, 2)};
+  --should-return-4rem: #{rem-scale(2, 2)};
+  --should-return-1-point-2em: #{em-scale(1)};
+  --should-return-1-point-44em: #{em-scale(2)};
+  --should-return-2em: #{em-scale(1, 2)};
+  --should-return-4em: #{em-scale(2, 2)};
+  // --should-value-error: #{modular-scale(#fff)};
+  // --should-increment-error: #{modular-scale(1, #fff)};
+  // --should-ratio-error: #{modular-scale(1, 1, #fff)};
 }
