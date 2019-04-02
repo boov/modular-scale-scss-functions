@@ -4,7 +4,7 @@
   --should-return-1: #{modular-scale(1)};
   --should-return-1em: #{modular-scale(1em)};
   --should-return-2: #{modular-scale(2, 0)};
-  --should-return-4px: #{modular-scale(2px, 1)};
+  --should-return-3-point-2px: #{modular-scale(2px, 1)};
   --should-return-4: #{modular-scale(4, 1, 1)};
   --should-return-8rem: #{modular-scale(4rem, 1, 2)};
   --should-return-1-point-2rem: #{rem-scale(1)};
